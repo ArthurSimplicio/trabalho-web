@@ -1,0 +1,142 @@
+body {
+    background-image: url(https://i.pinimg.com/originals/a3/a8/7f/a3a87fa4a55c8082c33393a67c89295d.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 70px;
+
+}
+
+.navbar a {
+    font-size: 23px;
+    transition: all .2s ease-in-out, color 0.2s;
+    text-shadow: 2px 2px #ff0000;
+    color: rgb(250, 109, 15);
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+li:hover {
+    transform: scale(2);
+    letter-spacing: 1.5px;
+
+}
+
+a:hover {
+    color: white;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown:hover {
+    transform: scale(1.1);
+    letter-spacing: 1.5px;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.dropdown:hover .dropdown-content {
+    margin-top: 25px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    transition: .2s;
+    transform: scale(1);
+
+}
+
+.dropdown-content:hover {
+    letter-spacing: 3px;
+}
+
+p {
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    display: flex;
+    flex-direction: column;
+    border: 4px double rgba(255, 255, 255, .25);
+    border-width: 4px 0;
+    padding: 1.5em 0em;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    width: 40em;
+    margin: 0 0 0 -20em;
+    color: white;
+    text-align: center;
+}
+
+p .span {
+
+    font: 700 4em "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: .25em 0 .325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255, 255, 255, .5);
+
+    background: url("../images/animated-text-fill.png") repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+
+@-webkit-keyframes aitf {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.footer{
+    left: -10px;
+    bottom: -480px;
+    display:flex;
+    justify-content: center;
+    align-items: end;
+	background-color: #333;
+	text-align: center;
+	padding: 15px;
+	position: relative;
+	width: 99%;
+}
+
+.social-icons{
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+}
+.social-icons img{
+    transition: .5s ease-in-out;
+}
+
+.social-icons img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+
+}
