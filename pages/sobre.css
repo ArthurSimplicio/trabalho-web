@@ -72,3 +72,16 @@ h1{
     font-size: 50px;
     font-family: fantasy;
 }
+.sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texto{
+    width: 180px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+}
+
